@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{int a[5],size=0,i=0,*arrayptr;
+printf("enter the eleent size");
+scanf("%d",&size);
+i=size;
+arrayptr=a;
+printf("\nenrter the elements: ");
+
+while(i>0){
+    scanf("%d",arrayptr);
+    arrayptr++;
+    i--;
+}
+i=size;
+arrayptr=a;
+printf("\ngiven elements are: ");
+
+printf("%d",*arrayptr);
+arrayptr++;
+i--;
+while(i>0){
+    scanf("%d",arrayptr);
+    arrayptr++;
+    i--;
+}
+    return 0;
+}
