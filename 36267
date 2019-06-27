@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{int x,n=15,y=6,*ptr1,*ptr2;
+scanf("%i",&x,&y);
+ptr1=&x;
+ptr2=&y;
+*ptr1=15;
+*ptr2=6;
+      for(x=1;x<=n;x++){
+ if(!(x%y==0)){
+    printf("%i,",*ptr1);
+}
+}
+}
+
