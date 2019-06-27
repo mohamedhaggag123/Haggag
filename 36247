@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+void fabonacci(int *fibarr,int numberofseries)
+{
+    int n;
+    fibarr= malloc(sizeof(int)*numberofseries);
+    *fibarr=0;
+    fibarr++;
+    *fibarr=1;
+    fibarr++;
+    printf("%i\n%i\n",*(fibarr-2),*(fibarr-1));
+    for(n=0;n<numberofseries-2;n++,fibarr++)
+    {
+        *fibarr=*(fibarr-1)+*(fibarr-2);
+        printf("%i\n",*fibarr);
+}
+}
+int main()
+{ int n=10;
+int *fib;
+fabonacci(fib,n);
+}
+
