@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+void swap(int *x,int *y){
+int temp;
+temp=*y;
+*y=*x;
+*x=temp;
+}
+void main()
+{
+    int i,j;
+    int dal[4]={4,5,6,7};
+    int san[4]={21,22,23,24};
+
+for(i=0;i<4;i++){
+    swap(&dal[i],&san[i]);
+    printf("dal[%d]=%d ",i,dal[i]);
+}
+printf("\n");
+for(j=0;j<4;j++){
+    printf("san[%d]=%d ",j,san[j]);
+}
+}
