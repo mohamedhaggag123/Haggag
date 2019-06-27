@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{int base,exponent;
+long long result=1;
+printf("enter abase number");
+scanf("%d",&base);
+printf("enter an exponent number");
+scanf("%d",&exponent);
+int i=1;
+    while(i <=exponent){
+      result *=base;
+i++;
+        printf("%d %d =%d",base,exponent,result);
+    }
+    return 0;
+}
